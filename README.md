@@ -1,25 +1,63 @@
-# 🔍 ForensicsRAG
+# RAG Fake News Detection
 
-## Hybrid Agentic RAG for Deepfake, AI-Generated & Image Tampering Detection
+A Retrieval-Augmented Generation (RAG) based system for detecting and analyzing fake news using a combination of a news dataset, vector database, web/news retrieval, and an LLM.
 
-> A research-oriented multimodal image-forensics system combining large-scale visual retrieval, forensic analysis, Agentic RAG, web intelligence, and Groq LLM reasoning.
+The system retrieves relevant information from the local knowledge base and external news sources before generating an evidence-based analysis of the submitted news content.
 
 ---
 
-## 📌 Overview
+## Features
 
-**ForensicsRAG** is an intelligent image authenticity analysis system designed to detect and analyze:
+- Fake news classification
+- RAG-based information retrieval
+- Local vector database
+- Semantic similarity search
+- NewsAPI integration
+- Google Programmable Search integration
+- LLM-based explanation
+- Evidence-based analysis
+- Local dataset support
+- REST/API-ready project structure
+- Environment-variable based API configuration
+- Modular architecture
 
-- Real Images
-- AI-Generated Images
-- Deepfake Images
-- Face-Swapped Images
-- Tampered Images
-- Masked Images
-- Morphed Images
-- Digitally Edited Images
+---
 
-Unlike a conventional:
+## System Overview
 
 ```text
-Image → CNN → REAL / FAKE
+                 ┌─────────────────────┐
+                 │     User Input      │
+                 │  News / Headline    │
+                 └──────────┬──────────┘
+                            │
+                            ▼
+                 ┌─────────────────────┐
+                 │   Query Processing  │
+                 └──────────┬──────────┘
+                            │
+              ┌─────────────┴─────────────┐
+              │                           │
+              ▼                           ▼
+    ┌──────────────────┐        ┌──────────────────┐
+    │ Local Vector DB  │        │ External Sources │
+    │ RAG Retrieval    │        │ News / Web       │
+    └────────┬─────────┘        └────────┬─────────┘
+             │                           │
+             └─────────────┬─────────────┘
+                           ▼
+                ┌─────────────────────┐
+                │ Context Aggregation │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │       LLM           │
+                │ Analysis / Reasoning│
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │ Final Verification  │
+                │ + Explanation      │
+                └─────────────────────┘
