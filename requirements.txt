@@ -1,0 +1,17 @@
+streamlit
+langchain
+langchain-community
+sentence-transformers
+faiss-cpu
+pandas
+numpy
+requests
+beautifulsoup4
+newspaper3k
+python-dotenv
+groq
+google-api-python-client
+newsapi-python
+scikit-learn
+kaggle
+lxml
