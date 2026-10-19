@@ -26,7 +26,7 @@ The system retrieves relevant information before asking the LLM to analyze the s
 
 ---
 
-## Objectives
+## Objectives!
 
 The main objectives of this project are:
 
