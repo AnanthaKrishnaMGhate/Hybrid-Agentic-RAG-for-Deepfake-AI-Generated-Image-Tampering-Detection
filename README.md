@@ -24,7 +24,11 @@ This project addresses that limitation by combining:
 
 The system retrieves relevant information before asking the LLM to analyze the submitted claim.
 
+<<<<<<< Updated upstream
 ---
+=======
+----
+>>>>>>> Stashed changes
 
 ## Objectives!
 
