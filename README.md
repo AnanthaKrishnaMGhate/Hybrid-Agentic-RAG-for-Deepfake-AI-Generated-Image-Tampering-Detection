@@ -23,10 +23,14 @@ This project addresses that limitation by combining:
 - Evidence-based reasoning
 
 The system retrieves relevant information before asking the LLM to analyze the submitted claim.
+<<<<<<< Updated upstream
 
 -----
 
 ## Objectives!
+=======
+## Objectives!  
+>>>>>>> Stashed changes
 
 The main objectives of this project are:
 
@@ -39,7 +43,7 @@ The main objectives of this project are:
 - Generate an explainable response instead of relying only on a classification label.
 - Build a modular architecture that can be extended with additional models and data sources.
 
----
+-----
 
 ## Key Features
 
